@@ -116,7 +116,7 @@ SEND_LOCATION = {
 
 BTN_CURRENCY = {
     1: "💵 Kurs valyuta",
-    2: "💵 Курс валюта"
+    2: "💵 Курс валют"
 }
 
 BTN_RESEND_VERIFY_CODE = {
@@ -126,7 +126,7 @@ BTN_RESEND_VERIFY_CODE = {
 
 CURRENCY = {
     1: "🏛 Valyuta kursi",
-    2: "🏛 Курс валюта"
+    2: "🏛 Курс валют"
 }
 
 TEXT_VERIFY_WARNING = {

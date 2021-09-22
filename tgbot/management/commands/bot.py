@@ -16,8 +16,8 @@ import os
 ADMIN_ID = settings.TGADMINID
 
 base_path = settings.BASE_DIR
-base_path1 = base_path.replace(os.sep, '/')
-db = Database(f'{base_path1}/db.sqlite3')
+# base_path1 = base_path.replace(os.sep, '/')
+db = Database()
 
 
 def check(update, context):
@@ -402,10 +402,10 @@ def message_handler(update, context):
 
                     else:
                         path1 = settings.MEDIA_ROOT
-                        newPath = path1.replace(os.sep, '/')
+                        # newPath = path1.replace(os.sep, '/')
                         context.bot.send_photo(
                             chat_id=ch,
-                            photo=open(f'{newPath}/{last_news["image"]}', "rb"),
+                            photo=open(f'{path1}/{last_news["image"]}', "rb"),
                             caption=f"""<b>{last_news[f'heading_{globals.LANGUAGE_CODE[lang_code]}']}</b>\n{last_news[f'text_{globals.LANGUAGE_CODE[lang_code]}']}\n<i>{date}</i>""",
                             parse_mode="HTML"
                         )
